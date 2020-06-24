@@ -1,6 +1,5 @@
 const initialState = {
   a: 1,
-  b: 2
 }
 
 const reducer = ( state = initialState, action ) => {
@@ -11,15 +10,6 @@ const reducer = ( state = initialState, action ) => {
       a:state.a + state.b
     }
   }  
-  if ( action.type === 'UPDATE_B' ) {
-    return {
-      ...state,
-      b:state.a + state.b
-    }
-  }  
-
-
-
   return state
 }
 
